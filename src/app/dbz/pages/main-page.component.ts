@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
 import { Character } from '../interfaces/character.interface';
 
 @Component({
@@ -20,4 +21,10 @@ export class MainPageComponent {
       power: 7500,
     },
   ];
+
+  onNewCharacer( character: Character):void {
+    console.log('Main page');
+    console.log(character);
+
+  }
 }
