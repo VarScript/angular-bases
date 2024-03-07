@@ -17,7 +17,7 @@ export class AddCharacterComponent {
     power: 0
   }
 
-  emitCharacter(): void {
+  public emitCharacter(): void {
     if(this.character.name.length === 0) return;
 
     this.onNewCharacter.emit(this.character)
